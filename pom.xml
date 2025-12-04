@@ -37,12 +37,13 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- MYSQL DRIVER -->
-        <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-    <version>8.0.33</version>
+       <!-- MARIADB DRIVER (compatível com MySQL e funciona no Maven Central) -->
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+    <version>3.3.3</version>
 </dependency>
+
 
 
         <!-- SPRING SECURITY (vamos desativar depois) -->
@@ -83,5 +84,6 @@
     </build>
 
 </project>
+
 
 
