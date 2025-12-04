@@ -39,9 +39,11 @@
 
         <!-- MYSQL DRIVER -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-        </dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.1.0</version>
+</dependency>
+
 
         <!-- SPRING SECURITY (vamos desativar depois) -->
         <dependency>
@@ -81,3 +83,4 @@
     </build>
 
 </project>
+
