@@ -5,12 +5,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- SPRING BOOT PARENT -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.0</version>
-        <relativePath/> 
+        <relativePath/>
     </parent>
 
     <groupId>com.vidaplus</groupId>
@@ -20,7 +19,7 @@
     <description>Cadastro e gerenciamento de pacientes</description>
 
     <properties>
-       <java.version>11</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
@@ -31,28 +30,26 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- JPA / HIBERNATE -->
+        <!-- JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-       <!-- MARIADB DRIVER (compatível com MySQL e funciona no Maven Central) -->
-<dependency>
-    <groupId>org.mariadb.jdbc</groupId>
-    <artifactId>mariadb-java-client</artifactId>
-    <version>3.3.3</version>
-</dependency>
+        <!-- MARIADB DRIVER -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.3.3</version>
+        </dependency>
 
-
-
-        <!-- SPRING SECURITY (vamos desativar depois) -->
+        <!-- SPRING SECURITY -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- VALIDAÇÃO -->
+        <!-- VALIDATION -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
@@ -65,7 +62,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- TESTES -->
+        <!-- TEST -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -76,6 +73,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
