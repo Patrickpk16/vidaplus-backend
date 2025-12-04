@@ -1,6 +1,6 @@
 package com.vidaplus.backend.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 
 @Data
@@ -18,3 +18,4 @@ public class Paciente {
     private String telefone;
     private String endereco;
 }
+
