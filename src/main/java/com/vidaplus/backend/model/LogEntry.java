@@ -1,6 +1,6 @@
 package com.vidaplus.backend.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 import java.time.LocalDateTime;
 
@@ -23,3 +23,4 @@ public class LogEntry {
     private String acao;
     private LocalDateTime dataHora;
 }
+
