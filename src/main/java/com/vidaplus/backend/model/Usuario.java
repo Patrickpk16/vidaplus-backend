@@ -1,6 +1,6 @@
 package com.vidaplus.backend.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 
 @Data
@@ -16,3 +16,4 @@ public class Usuario {
     private String senha;
     private String perfil; // ADMIN ou RECEPCIONISTA
 }
+
